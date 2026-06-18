@@ -1,0 +1,39 @@
+{
+  "name": "report-nestjs-typeorm",
+  "version": "1.0.0",
+  "description": "Bug report for @nestjs/typeorm",
+  "homepage": "https://github.com/beiifeng/report-nestjs-typeorm#readme",
+  "bugs": {
+    "url": "https://github.com/beiifeng/report-nestjs-typeorm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beiifeng/report-nestjs-typeorm.git"
+  },
+  "license": "MIT",
+  "author": "YiFei Wang",
+  "scripts": {
+    "dev": "nest start",
+    "build": "nest build",
+    "lint": "biome lint --write src/",
+    "format": "biome format --write src/"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.0",
+    "@nestjs/cli": "^11.0.23",
+    "@swc/cli": "^0.8.1",
+    "@swc/core": "^1.15.41",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.27",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.1.27",
+    "@nestjs/platform-express": "^11.1.27",
+    "@nestjs/typeorm": "^11.0.2",
+    "mysql2": "^3.22.5",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "typeorm": "^0.3.30"
+  }
+}
