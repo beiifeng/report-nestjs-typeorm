@@ -1,9 +1,10 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { User } from './user.entity';
 
 @Entity('xy_post')
-export class Post {
-  @PrimaryColumn()
-  declare id: string;
+class a {
+  @PrimaryGeneratedColumn()
+  declare id: number;
 
   @Column()
   declare title: string;
@@ -11,9 +12,9 @@ export class Post {
   @Column()
   declare content: string;
 
-  @Column()
-  declare author: string;
+  @ManyToOne(() => User)
+  declare author: User;
 
-  @Column()
-  declare category: string;
 }
+
+export { a as Post };

@@ -1,9 +1,9 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('xx_user')
-export class User {
-  @PrimaryColumn()
-  declare id: string;
+class a {
+  @PrimaryGeneratedColumn()
+  declare id: number;
 
   @Column()
   declare name: string;
@@ -11,3 +11,5 @@ export class User {
   @Column()
   declare email: string;
 }
+
+export { a as User };

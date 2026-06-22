@@ -3,7 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { Category, Post, User } from './entities';
+import { Post, User } from './entities';
 
 @Module({
   imports: [
@@ -28,7 +28,7 @@ import { Category, Post, User } from './entities';
         };
       },
     }),
-    TypeOrmModule.forFeature([Category, Post, User]),
+    TypeOrmModule.forFeature([Post, User]),
   ],
   controllers: [AppController],
   providers: [AppService],
